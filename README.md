@@ -1,7 +1,9 @@
-gabble
-======
+gabble.it
+=========
 
 Manage your tasks and log your time through Skype. Coming soon!
+
+This repository contains the source code for the Gabble app only, for the landing pages see [this repo](https://github.com/vincentpaca/gabble-pages).
 
 Starting Development
 --------------------
