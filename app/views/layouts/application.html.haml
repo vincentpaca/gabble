@@ -2,9 +2,47 @@
 %html
   %head
     %title Gabble
+    %meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1.0' }
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
 
   %body
     = yield
+
+    / MODALS
+    .modal#addTaskModal
+      .modal-header
+        %a.close
+          &times;
+        %h2 Add your task
+      .modal-body
+        .form
+          %fieldset
+            %form{ :name => 'typeSelect' }
+              
+              %input#radio1{ :type => 'radio', :name => 'typeSelect', :checked => 'checked' }
+              %label.inline{ :for => 'radio1' }
+                Doing
+              
+              %input#radio2{ :type => 'radio', :name => 'typeSelect' }
+              %label.inline{ :for => 'radio2' }
+                Done
+          %fieldset
+            %label
+              Select a time
+            %select.short
+              %option 12
+            %select.short
+              %option 15
+            %select.short
+              %option AM
+          %fieldset
+            %label Task Description
+            %textarea.full
+      .modal-footer
+        .text-right
+          %button.btn.action
+            Add Task
+    .modal-backdrop
+

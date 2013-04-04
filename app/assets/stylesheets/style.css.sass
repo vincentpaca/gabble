@@ -1,0 +1,217 @@
+a
+  color: #3c9ae2
+  cursor: pointer
+textarea
+  box-sizing: border-box
+  &.full
+    width: 100%
+label
+  &.inline
+    display: inline-block
+    margin-right: 5px
+.text-right
+  text-align: right
+.btn, button.btn
+  display: inline-block
+  padding: 7px 12px
+  background: #f1f1f1
+  text-shadow: 0 1px 0 #fff
+  text-decoration: none
+  color: #343434
+  border-radius: 5px
+  border: none
+  font-size: 13px
+  font-weight: bold
+  &.action
+    
+    background: #e74c3c
+    color: #fff
+    text-shadow: 0 -1px 0 rgba(0,0,0,.3)
+    &:hover
+      background: lighten(#E74C3C, 5%)
+    &:active
+      background: darken(#E74C3C, 5%)
+  &.add-task
+    float: right
+    @extend .action
+
+.fixed-sidebar
+  position: fixed
+  height: 100%
+  border-right: 1px solid #232627
+  box-shadow: 1px 0 0 #363b3c
+  
+.sidemenu-list
+  margin-top: 10px
+  a
+    background: #e7e7e7
+    border-radius: 6px 0 0 6px
+    display: block
+    width: 60px
+    height: 60px
+    text-align: center
+
+.content
+  padding: 10px
+  position: relative
+
+.tree
+  width: 3px
+  background: #e1e1e1
+  position: absolute
+  height: 100%
+.content-list
+  padding-left: 30px
+  h2
+    font-weight: bold
+    font-size: 20px
+    margin-left: 25px
+.ball-marker
+  width: 20px
+  height: 20px
+  background-color: #f65b25
+  position: absolute
+  left: -8px
+  border-radius: 50%
+  border: 2px solid #fff
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-shadow: 0 1px 2px rgba(0,0,0,.4)
+
+.timestamp
+  float: left
+  font-weight: bold
+  font-size: 11px
+  color: #c1c1c1
+  margin-right: 20px
+  text-align: right
+  line-height: 1
+  display: block
+  min-width: 54px
+
+  big
+    color: #666
+    display: block
+    font-size: 20px
+.caret-right
+  border-bottom: 5px solid transparent
+  border-top: 5px solid transparent
+  border-right: 5px solid #000000
+  display: inline-block
+  position: absolute
+  left: -5px
+  top: 7px
+  height: 0
+  vertical-align: top
+  width: 0
+.content-task-list
+  position: relative
+  li
+    position: relative
+    font-size: 16px
+    margin: 20px 0
+    &:first-child
+      margin-top: 0
+    &:last-child
+      margin-bottom: 0
+    
+      
+.item-seperator
+  margin: 20px 0
+  margin-left: 100px
+  font-weight: bold
+  color: #666666
+  span
+    display: inline-block
+    background-color: #666666
+    width: 5px
+    height: 5px
+    border-radius: 50%
+.item-group
+  margin-left: 20px
+  a
+    text-decoration: none
+    display: table
+    padding: 10px
+    background: #4992a7
+    color: #f1f1f1
+    border-radius: 5px
+    position: relative
+    .caret-right
+      border-right: 5px solid #4992a7
+  .action
+    font-weight: bold
+    display: inline-block
+    padding: 5px 10px
+    line-height: 1
+    background: #333
+    color: #fff
+    border-radius: 15px
+    box-shadow: 0 1px 0 rgba(255,255,255,.2)
+
+.footer-fixed
+  position: fixed
+  bottom: 0
+  margin-left: 90px
+  padding: 10px
+  background: #fff
+  width: 100%
+
+.form
+  fieldset
+    margin: 10px 0
+  label
+    margin-bottom: 5px
+  select
+    display: inline-block
+    &.short
+    width: 55px
+
+.modal
+  position: absolute
+  left: 50%
+  width: 560px
+  top: 10%
+  z-index: 1050
+  margin-left: -280px
+  background: #fff
+  color: #464646
+  border-radius: 10px
+  overflow: hidden
+  display: none
+  .close
+    float: right
+    font-size: 20px
+    font-weight: bold
+    text-decoration: none
+    color: #000
+    opacity: .3
+    margin-top: -3px
+    &:hover
+      opacity: .6
+.modal-header
+  padding: 10px
+  background: #f4f4f4
+  border-bottom: 1px solid #d1d1d1
+  color: #464646
+  h2
+    line-height: 1
+    margin: 0
+    font-size: 20px
+    font-weight: bold
+.modal-body, .modal-footer
+  padding: 10px
+.modal-footer
+  background: #f4f4f4
+  border-top: 1px solid #d1d1d1
+
+.modal-backdrop
+  display: none
+  position: fixed
+  background: #000
+  opacity: .6
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 1000
