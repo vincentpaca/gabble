@@ -35,21 +35,19 @@ label
     float: right
     @extend .action
 
-.fixed-sidebar
-  position: fixed
-  height: 100%
-  border-right: 1px solid #232627
-  box-shadow: 1px 0 0 #363b3c
-  
-.sidemenu-list
+.header
+  background: #3f474c
+  border-radius: 5px
   margin-top: 10px
+  
+.menu-list
   a
-    background: #e7e7e7
-    border-radius: 6px 0 0 6px
     display: block
-    width: 60px
-    height: 60px
-    text-align: center
+    padding: 10px
+    color: #fff
+    font-size: 14px
+    font-weight: bold
+    text-decoration: none
 
 .content
   padding: 10px
@@ -61,24 +59,27 @@ label
   position: absolute
   height: 100%
 .content-list
-  padding-left: 30px
+  padding-left: 50px
   h2
     font-weight: bold
     font-size: 20px
     margin-left: 25px
-.ball-marker
-  width: 20px
-  height: 20px
-  background-color: #f65b25
+.profile-marker
+  width: 40px
+  height: 40px
   position: absolute
-  left: -8px
+  background: #ccc
+  left: -18px
   border-radius: 50%
   border: 2px solid #fff
   box-sizing: border-box
   -moz-box-sizing: border-box
   box-shadow: 0 1px 2px rgba(0,0,0,.4)
-
+  overflow: hidden
+  img
+    width: 100%
 .timestamp
+
   float: left
   font-weight: bold
   font-size: 11px
@@ -92,7 +93,7 @@ label
   big
     color: #666
     display: block
-    font-size: 20px
+    font-size: 16px
 .caret-right
   border-bottom: 5px solid transparent
   border-top: 5px solid transparent
@@ -115,7 +116,12 @@ label
     &:last-child
       margin-bottom: 0
     
-      
+.status-section
+  margin-left: 80px      
+  margin-top: 5px
+  font-size: 12px
+  font-weight: bold
+  color: #666
 .item-seperator
   margin: 20px 0
   margin-left: 100px

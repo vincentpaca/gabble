@@ -1,14 +1,9 @@
 .container
-  .two.columns.alpha
-    .fixed-sidebar
-      %ul.sidemenu-list
-        %li
-          %a  Task List
-        %li
-          %a  Profile
-        %li
-          %a  Settings
-  .fifteen.offset-by-one.columns.omega
+  .header.fixed
+    %ul.menu-list
+      %li
+        %a Profile
+  .sixteen.columns.omega
     .content.content-list
       %a.btn.add-task#addTask
         Add Manual Task
@@ -19,7 +14,8 @@
       .tree
       %ul.content-task-list
         %li.group
-          .ball-marker
+          .profile-marker
+            =image_tag "avatar1.png"
           .item-group
 
             .timestamp
@@ -28,13 +24,14 @@
               pm
             %a
               %span.caret-right
-              %span.action
-                Doing 
+            
               For safety - reset parent styles, that can break glyph codes
+            .status-section
+              bea923d
 
         %li.group
-          .ball-marker
-          
+          .profile-marker
+            =image_tag "avatar2.png"
           .item-group
             .timestamp
               %big
@@ -42,9 +39,9 @@
               pm
             %a
               %span.caret-right
-              %span.action
-                Done
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus, tellus vel auctor cursus, nulla leo tincidunt quam, et varius neque ipsum eget ante
+            .status-section
+              agh38dj
       .item-seperator
         2 hours
         %span
@@ -60,8 +57,8 @@
       %ul.content-task-list
 
         %li.group
-          .ball-marker
-          
+          .profile-marker
+            =image_tag "avatar3.png"
           .item-group
 
             .timestamp
@@ -70,13 +67,14 @@
               pm
             %a
               %span.caret-right
-              %span.action
-                Doing 
+              
               For safety - reset parent styles, that can break glyph codes
+            .status-section
+              kbn3fdd
 
         %li.group
-          .ball-marker
-          
+          .profile-marker
+            =image_tag "avatar1.png"
           .item-group
             .timestamp
               %big
@@ -84,9 +82,9 @@
               pm
             %a
               %span.caret-right
-              %span.action
-                Done
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus, tellus vel auctor cursus, nulla leo tincidunt quam, et varius neque ipsum eget ante
+            .status-section
+              5sk1dsk
       .item-seperator
         2 hours
         %span
@@ -95,7 +93,8 @@
       %ul.content-task-list
 
         %li.group
-          .ball-marker
+          .profile-marker
+            =image_tag "avatar1.png"
           .item-group
             .timestamp
               %big
@@ -103,12 +102,14 @@
               am
             %a
               %span.caret-right
-              %span.action
-                Doing 
+              
               For safety - reset parent styles, that can break glyph codes
+            .status-section
+              bea923d
 
         %li.group
-          .ball-marker
+          .profile-marker
+            =image_tag "avatar3.png"
           .item-group
             .timestamp
               %big
@@ -116,9 +117,10 @@
               am
             %a
               %span.caret-right
-              %span.action
-                Done
+              
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus, tellus vel auctor cursus, nulla leo tincidunt quam, et varius neque ipsum eget ante
+            .status-section
+              9fpf3fm
         
       .item-seperator
         1 hour and 15 minutes
@@ -126,5 +128,4 @@
         %span
         %span
 
-      .footer-fixed
-        Total hours
+      
