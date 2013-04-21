@@ -135,7 +135,8 @@ label
     border-radius: 50%
 .item-group
   margin-left: 20px
-  a
+  .item-commit
+    width: 89%
     text-decoration: none
     display: table
     padding: 10px
@@ -145,6 +146,9 @@ label
     position: relative
     .caret-right
       border-right: 5px solid #4992a7
+a.commit-link
+  text-decoration: none
+  color: #fff
   .action
     font-weight: bold
     display: inline-block
@@ -221,3 +225,16 @@ label
   width: 100%
   height: 100%
   z-index: 1000
+.item-commit-form
+  input[type=text]
+    padding: 10px
+    font-size: 100%
+    display: inline-block
+    border: none
+    width: 82%
+  button
+    display: inline-block
+    padding: 9px 10px 10px 10px
+    font-size: 100%
+    border: none
+    background: #fff
